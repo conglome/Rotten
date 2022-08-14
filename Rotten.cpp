@@ -41,12 +41,12 @@ std::string random_string()
 
 int main()
 {
-    std::string base = random_string(); // get a basic 15 long string so we can work on it
+    std::string base = random_string(); // get a base string to work with
 
     std::string ShuffledBase;
 
     for (int i = 0; i <= 50; i++)
-        ShuffledBase = shufflePhrase(base); // shuffle it 50 times so we can get lucky
+        ShuffledBase = shufflePhrase(base); // shuffle it 50 times so we don't get common shit
 
     std::cout << ShuffledBase << std::endl;
     
